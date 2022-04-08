@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0;
+    background: #151f30;
+    z-index: 9;
+    border-bottom: 1px solid #151f30;
+
+    &__logo {
+
+        &_link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: #e0e0e0;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &_desc-min {
+            position: absolute;
+            color: #2f80ed;
+            font-size: 8px;    
+        }
+    }
+}

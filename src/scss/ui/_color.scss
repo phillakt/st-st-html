@@ -1,0 +1,78 @@
+.color {
+    &__white {
+        color: #e0e0e0;
+    }
+    &__black {
+        color: #292323;
+    }
+    &__red {
+        color: #E0101B;
+    }
+    &__orange {
+        color: #FF5E14;
+    }
+    &__blue {
+        color: #00235A;
+    }
+    &__gray {
+        color: #BCBCBC;
+    }
+    &__blue-light {
+        color: #134CA2;
+    }
+    &__blue-dark {
+        // color: #0A1229;
+        color: #00235A;
+    }
+
+    &__gray-b {
+        color: #333333;
+    }
+}
+
+.bground {
+    &__blue {
+        background: #0d51b7b0;
+        // background: #09449E;
+    }
+    
+    &__purple {
+        background: #ba4adf;
+    }
+
+    &__green {
+        background: #359912;
+    }
+
+    &__violet {
+        background: rgba(80, 77, 247, 0.8);;
+    }
+
+    &__yellowlight {
+        background: #FFE300;
+    }
+
+    &__lightgreen-grad {
+        background: linear-gradient(73.37deg, #A3D540 -13.61%, #56A43B 126.78%);
+    }
+
+    &__greenblue {
+        background: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+    }
+
+    &__white {
+        background: #fff;
+    }
+
+    &__gray {
+        background: #f7f7f7;
+    }
+
+    &__red {
+        background: #E0101B;
+
+        &_pale {
+            background: #ea6e74;
+        }
+    }
+}

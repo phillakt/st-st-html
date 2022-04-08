@@ -1,0 +1,103 @@
+.detail {
+    .fa-star {
+        font-weight: 100;
+        color: #2f80ed;
+    }
+    &__list-prop {
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        li {
+            position: relative;
+            color: #e0e0e0;
+            margin-right: 20px;
+            padding-left: 20px;
+            font-size: 16px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                right: -20px;
+                width: 5px;
+                height: 5px;
+                background: #2f80ed;
+                border-radius: 16px;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                margin: 0;
+
+                &::before {
+                    content: "";
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__category {
+        display: inline-flex;
+        font-family: "Montserrat", sans-serif;
+
+        li {
+            a {
+                cursor: pointer;
+                display: inline-flex;
+                color: #e0e0e0;
+                padding: 10px;
+                border-radius: 16px;
+                margin: 0 15px 0 0;
+                text-decoration: none;
+                font-size: 14px;
+                background: #151f30;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #2f80ed;
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: inline-flex;
+        font-family: "Montserrat", sans-serif;
+
+        li {
+            a {
+                cursor: pointer;
+                display: inline-flex;
+                color: #e0e0e0;
+                padding: 10px;
+                border-radius: 16px;
+                margin: 0 15px 0 0;
+                text-decoration: none;
+                font-size: 25px;
+                background: #151f30;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #2f80ed;
+                }
+            }
+        }
+    }
+
+    &__content {
+        font-family: "Roboto", sans-serif;
+        color: #e0e0e0;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+}

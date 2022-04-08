@@ -1,0 +1,24 @@
+.sign-in {
+    font-family: 'Montserrat', sans-serif;
+
+    &__text {
+
+        a {
+            font-size: 14px;
+            color: #e0e0e0;
+            font-weight: 400;
+            text-decoration: none;
+            transition: all .3s ease;
+
+            i {
+                color: #2f80ed;
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                color: #2f80ed;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.pagination {
+    &__wrap {
+        background-color: #151f30;
+        border-radius: 16px;
+        padding: 15px 25px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__total {
+        display: flex;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__count {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #e0e0e0;
+        text-decoration: none;
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #e0e0e0;
+        text-decoration: none;
+    }
+
+    &__sum {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #e0e0e0;
+        text-decoration: none;
+    }
+
+    &__wrap-list {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li {
+            a {
+                font-family: 'Montserrat', sans-serif;
+                display: inline-flex;
+                border-radius: 16px;
+                margin: 0 5px 0 0;
+                color: #e0e0e0;
+                text-decoration: none;
+                font-size: 12px;
+                background: #131720;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s ease-in-out;
+
+                @media (max-width: 768px) {
+                    margin: 5px;
+                }
+
+                &:hover {
+                    color: #2f80ed;
+                }
+            }
+            a.active {
+                font-family: 'Montserrat', sans-serif;
+                display: inline-flex;
+                border-radius: 16px;
+                margin: 0 5px 0 0;
+                color: #2f80ed;
+                text-decoration: none;
+                font-size: 12px;
+                background: #131720;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+    &__btn_prev {
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        padding: 10px;
+        border-radius: 16px;
+        margin: 0 10px 0 0;
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 12px;
+        background: #131720;
+        width: 40px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 18px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #e0e0e0;
+            border-left: 2px solid #e0e0e0;
+            transform: rotate(315deg);
+        }
+    }
+
+    &__btn_next {
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        padding: 10px;
+        border-radius: 16px;
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 12px;
+        background: #131720;
+        width: 40px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 14px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #e0e0e0;
+            border-right: 2px solid #e0e0e0;
+            transform: rotate(45deg);
+        }
+    }
+}

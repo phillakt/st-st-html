@@ -1,0 +1,248 @@
+@import "../../node_modules/bootstrap-4-grid/scss/grid.scss";
+// @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+// @import "../../node_modules/swiper/css/swiper.min.css";
+// @import "../../node_modules/animate.css/animate.min.css";
+
+// @import "../../node_modules/material-icons/iconfont/material-icons.css";
+// @import "../scss/section/layers/banner";
+// @import "../scss/section/_breadcrumbs";
+@import "../scss/section/_header";
+@import "../scss/section/_navigation";
+@import "../scss/section/_auth";
+@import "../scss/section/_home-slider";
+@import "../scss/section/_home-filter";
+@import "../scss/section/_pagination";
+@import "../scss/section/_detail";
+@import "../scss/section/_footer";
+
+
+
+// @import "../scss/ui/grid";
+@import "../scss/indentation";
+@import "../scss/ui/flex";
+@import "../scss/ui/fs";
+@import "../scss/ui/color";
+@import "../scss/ui/form";
+@import "../scss/ui/_card";
+@import "../scss/ui/_social";
+@import "../scss/ui/_btn";
+// @import "../scss/ui/list";
+// @import "../scss/ui/btn";
+// @import "../scss/ui/accordion";
+// @import "../scss/ui/link";
+// @import "../scss/ui/icon";
+// @import "../scss/ui/link";
+// @import "../scss/ui/title";
+
+// @font-face {
+//     font-family: "Montserrat";
+//     src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Montserrat";
+//     src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Montserrat";
+//     src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+//     font-weight: 800;
+//     font-style: normal;
+// }
+
+
+// @font-face {
+//     font-family: "Raleway";
+//     src: local("Raleway"), local("Raleway"), url("../fonts/Raleway-Medium.ttf") format("truetype");
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Raleway";
+//     src: local("Raleway"), local("Raleway"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Raleway";
+//     src: local("Raleway"), local("Raleway"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+//     font-weight: 800;
+//     font-style: normal;
+// }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: 400;
+    background-color: #131720;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+.w-100 {
+    width: 100%;
+}
+
+.hr-gray {
+    height: 1px;
+    background: #eee;
+}
+
+.f-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+.fontw-700 {
+    font-weight: 700;
+}
+
+.fontw-600 {
+    font-weight: 600;
+}
+
+.fontw-500 {
+    font-weight: 500;
+}
+
+.fontw-400 {
+    font-weight: 400;
+}
+
+.tt_upper {
+    text-transform: uppercase;
+}
+
+.b-radius {
+    &_16 {
+        border-radius: 16px;
+    }
+}
+
+.border-blue-1 {
+    border-top: 1px solid rgba(47,128,237,0.1);
+}
+
+.img-res {
+    width: 100%;
+    height: auto;
+}
+
+// ::-webkit-scrollbar {
+//     width: 5px;
+//     background-color: #ffffff;
+// }
+
+/* ползунок скроллбара */
+// ::-webkit-scrollbar-thumb {
+//     background-color: #428dff;
+// }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+.container-fluid,.container-lg,.container-md,.container-sm,.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container,.container-sm {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container,.container-md,.container-sm {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container,.container-lg,.container-md,.container-sm {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,.container-lg,.container-md,.container-sm,.container-xl {
+        max-width: 1400px;
+    }
+}

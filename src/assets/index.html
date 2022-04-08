@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo _pt-10">
+                        <!-- logo -->
+                        <a class="header__logo_link" href="#!">
+                            St-St.<span class="header__logo_desc-min">stream-store</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- navigation -->
+                    <nav class="sub-navigation">
+                        <ul class="topmenu">
+                            <li><a href="#!">Главная</a></li>
+                            <li><a href="#!" class="active">Жанры</a></li>
+                            <li><a href="#!">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <!-- search -->
+                    <form class="form-header-search _pt-10 _pb-10">
+                        <input class="form-header-search__input-text" type="text" placeholder="Поиск фильмов ...">
+                        <button class="form-header-search__btn_search-trans">
+                            <i class="color__white fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-2">
+                    <!-- sign in -->
+                    <div class="sign-in _pt-20">
+                        <span class="sign-in__text">
+                            <a href="#!">
+                                Войти <i class="fa-solid fa-right-to-bracket"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <section class="home-slider _mt-100 _pt-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="home-slider__card _mb-30">
+                        <!-- img -->
+                        <img src="../images/home-slider/8.png" alt="" class="b-radius_16 img-res max-img">
+
+                        <!-- play -->
+                        <a href="#!magnet" class="home-slider__card_play">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </a>
+
+                        <!-- title -->
+                        <h2 class="home-slider__card_title">
+                            <a href="#!title">Последний богатырь: Корень зла</a>
+                        </h2>
+
+                        <!-- genre list -->
+                        <ul class="home-slider__card_genre-list">
+                            <li>
+                                <a href="#!genre-list">Мелодрама</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Биография</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Музыка</a>
+                            </li>
+                        </ul>
+
+                        <!-- rating -->
+                        <span class="home-slider__card_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span class="_pl-5">9.1</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="home-slider__card _mb-30">
+                        <!-- img -->
+                        <img src="../images/home-slider/3.jpg" alt="" class="b-radius_16 img-res">
+
+                        <!-- play -->
+                        <a href="#!magnet" class="home-slider__card_play">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </a>
+
+                        <!-- title -->
+                        <h2 class="home-slider__card_title">
+                            <a href="#!title">Money Plane</a>
+                        </h2>
+
+                        <!-- genre list -->
+                        <ul class="home-slider__card_genre-list">
+                            <li>
+                                <a href="#!genre-list">Мелодрама</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Биография</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Музыка</a>
+                            </li>
+                        </ul>
+
+                        <!-- rating -->
+                        <span class="home-slider__card_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span class="_pl-5">9.1</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="home-slider__card _mb-30">
+                        <!-- img -->
+                        <img src="../images/home-slider/6.jpg" alt="" class="b-radius_16 img-res">
+
+                        <!-- play -->
+                        <a href="#!magnet" class="home-slider__card_play">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </a>
+
+                        <!-- title -->
+                        <h2 class="home-slider__card_title">
+                            <a href="#!title">Money Plane</a>
+                        </h2>
+
+                        <!-- genre list -->
+                        <ul class="home-slider__card_genre-list">
+                            <li>
+                                <a href="#!genre-list">Мелодрама</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Биография</a>
+                            </li>
+                            <li>
+                                <a href="#!genre-list">Музыка</a>
+                            </li>
+                        </ul>
+
+                        <!-- rating -->
+                        <span class="home-slider__card_rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span class="_pl-5">9.1</span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home-filter__wrap">
+                        <div class="fjc-sb">
+                            <ul class="ul home-filter__genre">
+                                <li><a href="#!">Наше кино</a></li>
+                                <li><a href="#!">Аниме</a></li>
+                                <li><a href="#!" class="active">Мелодрама</a></li>
+                                <li><a href="#!">Биография</a></li>
+                                <li><a href="#!">Музыка</a></li>
+                                <li><a href="#!">Боевик</a></li>
+                                <li><a href="#!">Мюзикл</a></li>
+                                <li><a href="#!">Вестерн</a></li>
+                                <li><a href="#!">Приключения</a></li>
+                                <li><a href="#!">Военный</a></li>
+                                <li><a href="#!">Семейный</a></li>
+                                <li><a href="#!">Детектив</a></li>
+                                <li><a href="#!">Сериалы</a></li>
+                                <li><a href="#!">Документальный</a></li>
+                                <li><a href="#!">Спорт</a></li>
+                                <li><a href="#!">Драма</a></li>
+                                <li><a href="#!">Триллер</a></li>
+                                <li><a href="#!">История</a></li>
+                                <li><a href="#!">Ужасы</a></li>
+                                <li><a href="#!">Комедия</a></li>
+                                <li><a href="#!">Фантастика</a></li>
+                                <li><a href="#!">Криминал</a></li>
+                                <li><a href="#!">Фэнтези</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog__grid _mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card _mb-30">
+                        <div class="card__link">
+                            <span class="card__img">
+                                <img src="../images/catalog/films/card/2.png" class="img-res" alt="films">
+                            </span>
+                            <a href="#!" class="card__play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                            <span class="card__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="_pl-5">9.1</span>
+                            </span>
+                        </div>
+
+                        <div class="flex__55 card__content">
+                            <div>
+                                <div class="_pb-10">
+                                    <h3 class="card__title">
+                                        <a href="#!">The Good Lord Bird</a>
+                                    </h3>
+                                </div>
+                                <div class="_pb-10">
+                                    <div class="card__year">
+                                        <span class="_mr-5">Дата выхода:</span> 
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                                <div class="_pb-10">
+                                    <div class="card__director">
+                                        <span class="_mr-5">Режисер:</span> 
+                                        <span>Rian Johnson</span>
+                                    </div>
+                                </div>
+                                <div class="fjc-end _pb-10">
+                                    <span class="color__white f-montserrat fs-12 _mr-5">Категории:</span> 
+                                    <ul class="card__genre-list">
+                                        <li><a href="#!">Криминал</a></li>
+                                        <li><a href="#!">Спорт</a></li>
+                                        <li><a href="#!">Ужасы</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card__slogan">
+                                    «The longer you wait, the harder it gets»
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card _mb-30">
+                        <div class="card__link">
+                            <span class="card__img">
+                                <img src="../images/catalog/films/card/2.png" class="img-res" alt="films">
+                            </span>
+                            <a href="#!" class="card__play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                            <span class="card__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="_pl-5">9.1</span>
+                            </span>
+                        </div>
+
+                        <div class="flex__55 card__content">
+                            <div>
+                                <div class="_pb-10">
+                                    <h3 class="card__title">
+                                        <a href="#!">The Good Lord Bird</a>
+                                    </h3>
+                                </div>
+                                <div class="_pb-10">
+                                    <div class="card__director">
+                                        <span>Режисер: </span> Rian Johnson
+                                    </div>
+                                </div>
+                                <div class="_pb-10">
+                                    <ul class="card__genre-list">
+                                        <li><a href="#!">Криминал</a></li>
+                                        <li><a href="#!">Спорт</a></li>
+                                        <li><a href="#!">Документальный</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card__slogan">
+                                    «The longer you wait, the harder it gets»
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card _mb-30">
+                        <div class="card__link">
+                            <span class="card__img">
+                                <img src="../images/catalog/films/card/1.png" class="img-res" alt="films">
+                            </span>
+                            <a href="#!" class="card__play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                            <span class="card__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="_pl-5">9.1</span>
+                            </span>
+                        </div>
+
+                        <div class="flex__55 card__content">
+                            <div>
+                                <div class="_pb-10">
+                                    <h3 class="card__title">
+                                        <a href="#!">The Good Lord Bird</a>
+                                    </h3>
+                                </div>
+                                <div class="_pb-10">
+                                    <div class="card__director">
+                                        <span>Режисер: </span> Rian Johnson
+                                    </div>
+                                </div>
+                                <div class="_pb-10">
+                                    <ul class="card__genre-list">
+                                        <li><a href="#!">Криминал</a></li>
+                                        <li><a href="#!">Спорт</a></li>
+                                        <li><a href="#!">Документальный</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card__slogan">
+                                    «The longer you wait, the harder it gets»
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card _mb-30">
+                        <div class="card__link">
+                            <span class="card__img">
+                                <img src="../images/catalog/films/card/3.png" class="img-res" alt="films">
+                            </span>
+                            <a href="#!" class="card__play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                            <span class="card__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="_pl-5">9.1</span>
+                            </span>
+                        </div>
+
+                        <div class="flex__55 card__content">
+                            <div>
+                                <div class="_pb-10">
+                                    <h3 class="card__title">
+                                        <a href="#!">The Good Lord Bird</a>
+                                    </h3>
+                                </div>
+                                <div class="_pb-10">
+                                    <div class="card__director">
+                                        <span>Режисер: </span> Rian Johnson
+                                    </div>
+                                </div>
+                                <div class="_pb-10">
+                                    <ul class="card__genre-list">
+                                        <li><a href="#!">Криминал</a></li>
+                                        <li><a href="#!">Спорт</a></li>
+                                        <li><a href="#!">Документальный</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card__slogan">
+                                    «The longer you wait, the harder it gets»
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination _mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pagination__wrap fjc-sb fai-c">
+                        <div class="pagination__total">
+                            <span class="pagination__count">12</span>
+                            <span class="pagination__text _pl-10 _pr-10">из</span>
+                            <span class="pagination__sum">144</span>
+                        </div>
+                        <div class="pagination__wrap-list">
+                            <span class="pagination__btn_prev"></span>
+                            <ul class="pagination__list">
+                                <li><a href="#!">1</a></li>
+                                <li><a href="#!" class="active">2</a></li>
+                                <li><a href="#!">3</a></li>
+                                <li><a href="#!">4</a></li>
+                                <li><a href="#!">5</a></li>
+                                <li><a href="#!">6</a></li>
+                                <li><a href="#!">17</a></li>
+                                <li><a href="#!">109</a></li>
+                            </ul>
+                            <span class="pagination__btn_next"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog__grid-min _mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="card _mb-30">
+                        <div class="card__link">
+                            <span class="card__img">
+                                <img src="../images/catalog/films/card/2.png" class="img-res" alt="films">
+                            </span>
+                            <a href="#!" class="card__play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
+                            <span class="card__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="_pl-5">9.1</span>
+                            </span>
+                        </div>
+                        <div class="card__content _mt-10">
+                            <div>
+                                <div class="_pb-10">
+                                    <h3 class="card__title">
+                                        <a href="#!">The Good Lord Bird</a>
+                                    </h3>
+                                </div>
+                                <div class="_mb-5">
+                                    <div class="card__year">
+                                        <span class="_mr-10">Rian Johnson</span>
+                                        <span>2022</span>
+                                    </div>
+                                </div>
+                                <div class="_pb-10">
+                                    <ul class="card__genre-list">
+                                        <li><a href="#!">Криминал</a></li>
+                                        <li><a href="#!">Спорт</a></li>
+                                        <li><a href="#!">Документальный</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="fjc-c">
+                        <div class="btn btn-download">
+                            <span>Загрузить еще</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row _pb-60">
+                <div class="col-lg-4">
+                    <div class="footer__logo">
+                        <a class="footer__logo_link" href="#!">St-St.<span class="footer__logo_desc-min">stream-store
+                            </span>
+                        </a>
+                    </div>
+                    <div class="f-montserrat _mt-20">
+                        <div class="color__white fs-14">Потоковое хранилище</div>
+                        <div class="color__white fs-14">фильмов и сериалов</div>
+                    </div>
+                    <div class="social _mt-20 _mb-30">
+                        <ul class="ul social__list">
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-brands fa-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="_mb-30">
+                        <h2 class="color__white fs-26">Жанры</h2>
+                    </div>
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#!">Наше кино</a></li>
+                            <li><a href="#!" class="active">Аниме</a></li>
+                            <li><a href="#!">Мелодрама</a></li>
+                            <li><a href="#!">Биография</a></li>
+                            <li><a href="#!">Музыка</a></li>
+                            <li><a href="#!">Боевик</a></li>
+                            <li><a href="#!">Мюзикл</a></li>
+                            <li><a href="#!">Вестерн</a></li>
+                            <li><a href="#!">Приключения</a></li>
+                            <li><a href="#!">Военный</a></li>
+                            <li><a href="#!">Семейный</a></li>
+                            <li><a href="#!">Детектив</a></li>
+                            <li><a href="#!">Сериалы</a></li>
+                            <li><a href="#!">Документальный</a></li>
+                            <li><a href="#!">Спорт</a></li>
+                            <li><a href="#!">Драма</a></li>
+                            <li><a href="#!">Триллер</a></li>
+                            <li><a href="#!">История</a></li>
+                            <li><a href="#!">Ужасы</a></li>
+                            <li><a href="#!">Комедия</a></li>
+                            <li><a href="#!">Фантастика</a></li>
+                            <li><a href="#!">Криминал</a></li>
+                            <li><a href="#!">Фэнтези</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="border-blue-1"></div>
+                </div>
+            </div>
+            <div class="row _pt-60">
+                <div class="col-lg-6">
+                    <div class="f-montserrat color__white fs-14">
+                        © ST-ST. <span class="color__white fs-10">stream-store</span> 2022.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

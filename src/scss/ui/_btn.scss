@@ -1,0 +1,21 @@
+.btn {
+    font-family: 'Montserrat',sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &-download {
+        background: #151f30;
+        border-radius: 16px;
+
+        span {
+            display: inline-flex;
+            color: #e0e0e0;
+            padding: 20px 40px;
+            font-size: 16px;
+        }
+
+        &:hover {
+            background: #2f80ed;
+        }
+    }
+}

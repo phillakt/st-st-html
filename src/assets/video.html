@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebTorrent video player</title>
+</head>
+
+<body>
+  <div id="blackbox-video"></div>
+  <script src="https://cdn.jsdelivr.net/npm/webtorrent@latest/webtorrent.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script>
+    var torrentId = 'magnet:?xt=urn:btih:30ecadc0b2eca6d42406c159f815b83386901230&dn=Scream_2022.mp4&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337';
+    var client = new WebTorrent()
+    client.add(torrentId, function (torrent) {
+      var file = torrent.files.find(function (file) {
+        return file.name.endsWith('.mp4')
+      })
+      file.appendTo('#blackbox-video')
+    })
+  </script>
+
+</body>
+
+</html>
